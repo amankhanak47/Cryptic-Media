@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+.navbar{
+  background-color: black;
+  display: flex;
+  height: 8vh;
+  /* width: 100vw; */
+  padding-left: 20px;
+  border-bottom: 0.5px solid rgb(57, 56, 56);
+  align-items: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar img{
+  border-radius: 500px;
+  height: 90%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar p{
+  color: white;
+  font-size: large;
+  font-weight: 800;
+  align-self: center;
+  padding-left: 10px;
 }
+.home{
+  background-color: black;
+  min-height: 92vh;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.home-shows{
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.homebox-show{
+  cursor: pointer;
+  margin: 15px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+      align-items: center;
+      transition: transform 450ms;
+}
+.homebox-show img{
+  width: 220px;
+}
+.homebox-show p{
   color: white;
+  font-weight: 700;
+  font-size: large;
+
+}
+.homebox-show:hover{
+  border: 3px solid white;
+  border-radius: 10px;
+  transform: scale(1.08);
+}
+.summary{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 30px;
+}
+.banner{
+  display: flex;
+
+}
+.showimg{
+  width: 500px;
+  padding-right: 20px;
+  border-radius: 5px;
+}
+.bannerright{
+  color: wheat;
+}
+.br-namerating{
+  display: flex;
+  align-items: center;
+}
+.summary-summary{
+  color:white;
+  font-size: 25px;
+}
+.sname{
+font-weight: 900;
+  font-size: 50px;
+  text-transform: capitalize;
+  font-family: fangsong;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.rating{
+  font-size: 35px;
+  margin: 0px 15px;
+}
+.year{
+  font-size: 40px;
+  margin: 0px 5px;
+}
+.button{
+  background-color: antiquewhite;
+  border: none;
+  border-radius: 10px;
+  margin: 0px 30px 0px 0px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.button:hover{
+  border: 1px solid white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
